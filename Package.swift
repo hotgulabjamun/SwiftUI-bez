@@ -4,22 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "bez",
+    name: "SwiftUI-bez",
     platforms: [.iOS(.v13), .macOS(.v10_15), .watchOS(.v6)],
     products: [
         .library(
-            name: "bez",
-            targets: ["bez"]),
+            name: "SwiftUI-bez",
+            targets: ["SwiftUI-bez"]),
     ],
     dependencies: [
         .package(url: "https://github.com/hotgulabjamun/CGExtender.git", from: "1.0.1")
     ],
     targets: [
         .target(
-            name: "bez",
+            name: "SwiftUI-bez",
             dependencies: ["CGExtender"]),
-        .testTarget(
-            name: "bezTests",
-            dependencies: ["bez"]),
+        // .testTarget(
+        //     name: "bezTests",
+        //     dependencies: ["bez"]),
     ]
 )
