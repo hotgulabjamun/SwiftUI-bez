@@ -12,7 +12,7 @@ let package = Package(
             targets: ["SwiftUI-bez"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/hotgulabjamun/CGExtender.git", from: "1.0.1")
+        .package(url: "https://github.com/hotgulabjamun/CGExtender.git", .branch("master")),
     ],
     targets: [
         .target(
